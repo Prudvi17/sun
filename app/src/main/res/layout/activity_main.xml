@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/animation_list"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/yellow_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@drawable/yellow_gradient">
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/mountains"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@drawable/dark_mountains"
+        android:elevation="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/mountains_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mountains"
+        android:visibility="invisible" />-->
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_sun"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/sea"
+        android:scaleType="fitXY"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:layout_height="@dimen/sea_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSunRise"
+            android:layout_width="wrap_content"
+            android:text="SunRise"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkOrange"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSunSet"
+            android:layout_width="wrap_content"
+            android:text="Sunset"
+            android:backgroundTint="@color/lightBlue"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
